@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.BorderPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.112"
+            fx:controller="sample.Controller">
+   <children>
+
+       <VBox prefHeight="200.0"  >
+             <HBox >
+
+                 <Text  text="   Nombre Elements   : "></Text>
+                 <TextField  fx:id="nb_element" maxWidth="50" maxHeight="10"  ></TextField>
+
+
+             </HBox>
+           <HBox fx:id="element" ><Text wrappingWidth="80" text="elements"></Text></HBox>
+           <HBox fx:id="poids">  <Text wrappingWidth="80" text="poids"></Text></HBox>
+           <HBox fx:id="valeur"> <Text wrappingWidth="80" text="valeurs"></Text></HBox>
+
+           <HBox> <Text wrappingWidth="80" text="Poids Max  :   "></Text>    <TextField fx:id="poids_max"></TextField>  </HBox>
+           <Button fx:id="submit" text="submit" minHeight="35" maxWidth="100"></Button>
+
+           <HBox fx:id="tab"></HBox>
+
+       </VBox>
+   </children>
+</AnchorPane>
